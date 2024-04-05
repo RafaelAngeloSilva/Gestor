@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap Css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- Folha de Estilo Css -->
+    <link rel="stylesheet" type="text/css" href="./../../assets/custom/estilo.css">
+
+    <title>Gestor - Vendedor</title>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark" id="navbarScroll">
+            
+            <div class="container-fluid">
+            
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+
+                        <li id="button_logo">
+                            <span >
+                                <a href="">
+                                    <img src="./../../assets/imagem/logoGestor.png" alt="Logo" width="100%">
+                                </a> 
+                            </span>
+                        </li>
+                        
+                        <li class="nav-item dropdown"> <!-- Cadastro -->
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" area-expanded="false">
+                                Cadastro
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="dropdown-item" href="./../cliente/cliente.html">Clientes</a></li>
+                                <li><a class="dropdown-item" href="./../fornecedor/fornecedor.html">Fornecedores</a></li>
+                                <li><a class="dropdown-item" href="vendedor.html">Vendedores</a></li>
+                                <li><a class="dropdown-item" href="./../produtos/produto.html">Produtos</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown"> <!-- Suprimentos -->
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" area-expanded="false">
+                                Suprimentos
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="dropdown-item" href="#">Controle de Estoque</a></li>
+                                <li><a class="dropdown-item" href="#">Pedido de Compra</a></li>
+                                <li><a class="dropdown-item" href="#">Relatórios</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown"> <!-- Vendas -->
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" area-expanded="false">
+                                Vendas
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="dropdown-item" href="./../../vendas/pedido_venda/vendas.html">Pedidos de Venda</a></li>
+                                <li><a class="dropdown-item" href="#">Notas Fiscais</a></li>
+                                <li><a class="dropdown-item" href="#">Relatórios</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown"> <!-- Financeiro -->
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" area-expanded="false">
+                                Financeiro
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="dropdown-item" href="#">Contas Bancárias</a></li>
+                                <li><a class="dropdown-item" href="./../../financeiro/contas_pagar/contas_pagar.html">Contas a Pagar</a></li>
+                                <li><a class="dropdown-item" href="./../../financeiro/contas_receber/contas_receber.html">Contas a Receber</a></li>
+                                <li><a class="dropdown-item" href="#">Relatórios</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <button class="navbar-toggler" data-toggler="collapse" data-target="#nav-principal">
+                <i class="fas fa-bars text-white"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav-principal">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a href="">
+                            <i class="bi bi-gear text-secondary"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="">
+                            <i class="bi bi-question-circle-fill text-secondary"></i>
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="">
+                            <i class="bi bi-box-arrow-right text-secondary"></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+    <div class="container-fluid p-3">
+        <div class="row">
+
+            <div class="col-md-10">
+
+                <div class="row"> 
+                    <ul class="navbar-nav list-group list-group-horizontal">
+                        <!-- <li class="nav-item text-secondary p-2">Home</li>
+                        <li class="nav-item text-secondary p-2 ">Cadastro</li> -->
+                        <li class="nav-item text-white ps-3"><h3>Vendedores</h3></li>
+                    </ul>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-1">
+                        <button class="bi bi-funnel-fill btn btn-success"></button>
+                    </div>
+
+                    <div class="col-md-5">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Nome do Vendedor" aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <button class="btn btn-outline-success bi bi-search" type="button" id="button-addon2"></button>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-5">
+                    </div>
+
+                    <div class="col-md-1">
+                        <button class="bi bi-printer btn btn-success"></button>
+                    </div>
+                </div><br>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <table class="table table-dark table-striped">
+                            
+                            <thead>
+                                <th scope="col">Código</th>
+                                <th scope="col">Nome</th>
+                                <th scope="col">CPF/ CNPJ</th>
+                                <th scope="col" class="notable_sm">Cidade</th>
+                                <th scope="col">Telefone</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</th>
+                                    <td>Suzana Oliveira</td>
+                                    <td>654.568.845-25</td>
+                                    <td class="notable_sm">Guarapuava-PR</td>
+                                    <td>(42) 9 8829-3833</td>
+                                </tr>
+
+                                <tr>
+                                    <td>2</th>
+                                    <td>Representante São Paulo</td>
+                                    <td>65.265.548/0001-56</td>
+                                    <td class="notable_sm">São Paulo-SP</td>
+                                    <td>(42) 9 8829-3833</td>
+                                </tr>
+
+                                <tr>
+                                    <td>3</th>
+                                    <td>Cosmo Laters</td>
+                                    <td>356.554.545/02</td>
+                                    <td class="notable_sm">Guarapuava-PR</td>
+                                    <td>(42) 9 8829-3833</td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
+            
+            </div>
+
+            <div class="col-md-2 fixed">
+                <a class="btn btn-success" href="cad_vendedor.html">Incluir Cadastro</a>
+            </div>
+        
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+
+</html>
